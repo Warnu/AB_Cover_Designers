@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Table Planner | ABCover Designers - When Elegance is of the essence</title>
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+        $( document ).ready(function(e) 
+        {
+          $("button").click(function(){
+            var totalsum = 0;
+            var buttonVal = $(this).attr('value');
+            $(this).prop('disabled', true);
+            var check = $(this).attr('value');
+            if (check == "clearbutton") {
+            $(this).removeAttr('disabled');
+            $("#chair").empty();
+            $("#napkin").empty();
+            $("#plate").empty();
+            $("#ttable").empty();
+            $("#utensil").empty();
+            $("total").empty();
+            }
+          $.ajax({       
+           type: 'POST',                               
+           url: 'stock.php',                
+           data: { select: buttonVal },                                       
+           dataType: 'json',                
+           success: function (data)          
+          {
+          $.each(data, function(i, item){
+            var count = 0;
+            var name = item.name;
+            var url = item.url;
+            var cost = item.cost;
+            var thumbnail = item.thumbnail;
+            var res = thumbnail.replace("http://www.abcoverdesigners.com/", " ");
+            var res2 = url.replace("http://www.abcoverdesigners.com/", " ");
+            $(".flex-inventory").append("<div><img class='invThumb' src="+res+" height='50' width='50' alt="+url+"><div>"+name+"</div><div>$"+cost+"</div></div>");
+          });
+             $(".invThumb").click(function(){
+                var choice = $(this).attr('alt');
+                var nUrl = $(this).attr('alt');
+                nUrl = nUrl.replace("http://www.abcoverdesigners.com/", " ");
+                choice = choice.replace("http://www.abcoverdesigners.com/images/tp/", " ");
+                choice = choice.slice(1,3);
+                switch (choice)
+                {
+                    case "ch":
+                    $("#chair").append("<img class='invImg' src="+nUrl+" height='150' width='150' alt="+nUrl+">");   
+                    break;
+                    
+                    case "nk":
+                    $("#napkin").append("<img class='invImg' src="+nUrl+" height='75' width='75' alt="+nUrl+">");
+                    break;
+                    
+                    case "pl":
+                    $("#plate").append("<img class='invImg' src="+nUrl+" height='90' width='86' alt="+nUrl+">");   
+                    break;
+                    
+                    case "tb":
+                    $("#ttable").append("<img class='invImg' src="+nUrl+" height='250' width='250' alt="+nUrl+">");  
+                    break;
+                    
+                    case "ut":
+                    $("#utensil").append("<img class='invImg' src="+nUrl+" height='60' width='60' alt="+nUrl+">");  ;
+                    break;
+                } 
+          });
+          } 
+              });
+            }); 
+        }); 
+           </script>
+    </head>
+    <body>
+        <header>
+            <div id="logo"><img src="images/logo.png" alt="AB Cover Designers Logo" width="200" height="100"></div> 
+            <h2 class="logotxt">Table Planner | Design Your Event Decorations</h2>
+        </header>

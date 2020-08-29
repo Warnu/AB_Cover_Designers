@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Contact Us | How can we help you today?</title>
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script> 
+            function validateForm() {
+            var x=0
+            var fname = document.forms["mForm"]["fname"].value;
+            var lname = document.forms["mForm"]["lname"].value;
+            var email = document.forms["mForm"]["email"].value;
+            var phone = document.forms["mForm"]["pnumber"].value;
+            var numbers = /^[0-9]+$/.test(phone);
+            var testEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
+            var testfName = /^[A-Za-z]+$/.test(fname);
+            var testlName = /^[A-Za-z]+$/.test(lname);
+            if (fname == "") {
+             alert("First Name must be filled out");
+             x = 1;
+            } 
+            if ((testfName == false) && (testfName != "")){
+              document.forms["mForm"]["fname"].focus();
+              alert("Please enter only letters for name field")
+              x = 1;
+            }
+            if (lname == "") {
+             alert("Last Name must be filled out");
+             x = 1;
+            }
+            if ((testlName == false) && (testlName != "")){
+              document.forms["mForm"]["lname"].focus();
+              alert("Please enter only letters for name field")
+              x = 1;
+            }
+            if (email == "") {
+             alert("Email must be filled out");
+             x = 1;
+            }
+            if ((testEmail == false) && (testEmail !="")){
+              document.forms["mForm"]["email"].focus();
+              alert("Please enter a valid @ email only!")
+              x = 1;
+            }
+            if ((phone.length !=10) || (phone.length < 10)){
+             alert("Phone number too short, try again");
+             document.forms["mForm"]["pnumber"].focus();
+             x = 1;
+            } 
+            if ((phone == false) && (phone != "")){
+                document.forms["mForm"]["pnumber"].focus();
+             alert("Please enter only numeric values");
+             x = 1;
+            }
+
+            /*validation functions*/
+            if (x > 0)
+            return false;
+            else
+            return true;
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <div id="logo"><img src="images/logo.png" alt="AB Cover Designers Logo" width="200" height="100"></div> 
+            <h2 class="logotxt">Contact Us | Comments, Compliments, or Concerns.</h2>
+        </header>

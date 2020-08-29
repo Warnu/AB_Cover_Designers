@@ -1,0 +1,1186 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+@media all and (min-width: 1024px) and (max-width: 2190px) {
+body {
+    background-color: #E8D3C2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16pt;
+    color: #ffffff;
+    margin: 0px;
+}
+
+h2.logotxt{
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    color: #331832;
+}
+
+header {
+    background-color: #EEE9ED;
+    color: #5386E4;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+#container {
+    width:100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background-color: #331832;
+    float: left;
+    margin:0px;
+    padding: 5px 0px 5px 0px;
+}
+.mainSec {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10px 0 5px;
+}
+.mainSec img{
+    flex-shrink: 1;
+    
+}
+footer {
+    clear: both;
+    background-color: #331832;
+    color: #ffffff;
+    text-align: center;
+    margin:0px;
+    font-size: 12pt;
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+    
+    
+}
+footer a{
+    text-decoration:none;
+}
+
+nav {
+  border-top: 1px solid #331832;
+  margin: 0px;
+  background-color: #C1B7B6;
+  border-bottom: 1px solid #E8D3C2;
+  width:100%;
+  padding: 0px;
+}
+nav a {
+    flex-shrink: 1;
+    color:#331832;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    margin: 0px;
+    padding: 5px 10px 5px;
+    background-color: #C1B7B6;
+
+}
+nav a:hover {
+    color: #331832;
+    margin: 0;
+    padding: 5px 10px 5px;
+    text-decoration: none;
+    background-color: white;
+    
+}
+nav a:visited {
+    color: #331832;
+}
+a {
+    color: #C1B7B6;
+}
+
+a:visited{
+    
+    color: #E8D3C2;
+}
+
+a:hover{
+    color:#5386E4;
+    
+}
+/*CSS Code for homepage */
+
+.imghome {
+   float: left;
+   margin: 0 10px 0 5px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.maintext {
+    font-size: 24pt;
+    margin-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*CSS Code for About Us */
+#location {
+    float: left ;
+    margin: 0 10px 0 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#listport {
+    float: left;
+}
+#slider {
+    width: 370px;
+    height: 400px;
+    overflow: hidden;
+}
+
+#slider .slides {
+    display: block;
+    width: 6000px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 370px;
+    height: 400px;
+}
+#slider img {
+    width: 100%;
+    height: 100%;
+}
+.carousel-link
+{
+    width: 370px;
+}
+.previousLink, .nextLink
+{
+    display:inline-block;
+}
+
+.previousLink
+{
+    float:left;
+}
+
+.nextLink
+{
+    float: right;
+}
+
+/*CSS Code for Portfolio */
+.blogtext {
+    margin-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/*CSS Code for Form*/
+hr {
+    border: 3px dotted #C1B7B6;
+    border-top: 0px;
+}
+#mForm{
+    width: 30%;
+    position: relative;
+    margin: auto;
+}
+form {
+    height: 370px;
+    margin: 0;
+    padding: 0px 5px 0px;
+    width: 350px;
+    font-size: 14pt;
+}
+input[type=text]{
+    border: none;
+    padding: 5px 5px;
+    margin: 5px 5px;
+    border-radius: 2px;
+    background-color: #C1B7B6;
+    float: right;
+}
+input[type=submit]{
+    border: none;
+    padding: 5px 5px;
+    border-radius: 2px;
+    background-color: #C1B7B6;
+    float: left;
+}
+input[type=submit]:hover{
+    color:#C1B7B6;
+    background-color: #331832;
+}
+select {
+    color:#331832;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 2px;
+    background-color: #C1B7B6;
+    float: right;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
+  /*CSS Code for quote */
+
+hr {
+    border: 3px dotted #C1B7B6;
+    border-top: 0px;
+}
+#iForm{
+    width: 30%;
+    position: relative;
+    margin: auto;
+}
+label.iForm {
+    margin: 3px;
+    float: left;
+}
+form.iForm {
+    height: 470px;
+    margin: 0;
+    padding: 0px 5px 0px;
+    width: 450px;
+    font-size: 14pt;
+}
+input[type=text].iForm{
+    border: none;
+    padding: 3px 3px;
+    margin: 2px 3px;
+    border-radius: 2px;
+    background-color: #C1B7B6;
+}
+input[type=submit].iForm{
+    border: none;
+    padding: 3px 3px;
+    border-radius: 2px;
+    background-color: #C1B7B6;
+    float: left;
+}
+input[type=submit].iForm:hover{
+    color:#C1B7B6;
+    background-color: #331832;
+}
+select.iForm {
+    color: #331832;
+    border: none;
+    padding: 2px 2px;
+    border-radius: 2px;
+    background-color:#C1B7B6;
+    float: right;
+    margin-top: 2px;
+
+}
+
+/*CSS Code for catalog preview */
+.thumbnails img{
+    height: 80px;
+    border: 2px solid #C1B7B6;
+    padding: 1px;
+    margin: 0 10px 10px 0;
+}
+.thumbnails img:hover{
+    border: 2px solid #331832;
+    cursor:pointer;
+}
+
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    body {
+    background-color: #E8D3C2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16pt;
+    color: #ffffff;
+    margin: 0px;
+}
+
+h2.logotxt{
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    color: #331832;
+}
+
+header {
+    background-color: #EEE9ED;
+    color: #5386E4;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+#container {
+    width:100%;
+}
+
+main {
+    width: 100%;
+    background-color: #331832;
+    float: left;
+    margin:0px;
+    padding: 5px 0px 5px 0px;
+}
+
+footer {
+    clear: both;
+    background-color: #331832;
+    color: #ffffff;
+    text-align: center;
+    margin:0px;
+    font-size: 12pt;
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+    
+    
+}
+footer a{
+    text-decoration:none;
+}
+
+nav {
+  border-top: 1px solid #331832;
+  margin: 0px;
+  background-color: #C1B7B6;
+  border-bottom: 1px solid #E8D3C2;
+  width:100%;
+  padding: 0px;
+}
+nav a {
+    flex-shrink: 1;
+    color:#331832;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    margin: 0px;
+    padding: 5px 10px 5px;
+    background-color: #C1B7B6;
+
+}
+nav a:hover {
+    color: #331832;
+    margin: 0;
+    padding: 5px 10px 5px;
+    text-decoration: none;
+    background-color: white;
+    
+}
+nav a:visited {
+    color: #331832;
+}
+a {
+    color: #C1B7B6;
+}
+
+a:visited{
+    
+    color: #E8D3C2;
+}
+
+a:hover{
+    color:#5386E4;
+    
+}
+/*CSS Code for homepage */
+
+.imghome {
+   float: left;
+   margin: 0 10px 0 5px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.maintext {
+    font-size: 24pt;
+    margin-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*CSS Code for About Us */
+p {
+    font-size: 24pt;
+}
+#location {
+    float: left ;
+    margin: 0 10px 0 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#listport {
+    float: left;
+}
+#slider {
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+}
+
+#slider .slides {
+    display: block;
+    width: 6000px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 500px;
+    height: 400px;
+}
+#slider img {
+    width: 100%;
+    height: 100%;
+}
+.carousel-link
+{
+    width: 500px;
+}
+.previousLink, .nextLink
+{
+    display:inline-block;
+}
+
+.previousLink
+{
+    float:left;
+}
+
+.nextLink
+{
+    float: right;
+}
+
+/*CSS Code for Portfolio */
+.blogtext {
+    margin-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/*CSS Code for Form*/
+hr {
+    border: 3px dotted #C1B7B6;
+    border-top: 0px;
+}
+#mForm {
+    width: 30%;
+    position: relative;
+    margin: auto;
+}
+form {
+    height: 370px;
+    margin: 0;
+    padding: 0px 5px 0px;
+    width: 350px;
+    font-size: 14pt;
+}
+input[type=text]{
+    border: none;
+    padding: 5px 5px;
+    margin: 5px 5px;
+    border-radius: 2px;
+    background-color: #C1B7B6;
+    float: right;
+}
+input[type=submit]{
+    border: none;
+    padding: 5px 5px;
+    border-radius: 2px;
+    background-color: #C1B7B6;
+    float: left;
+}
+input[type=submit]:hover{
+    color:#C1B7B6;
+    background-color: #331832;
+}
+select {
+    color:#331832;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 2px;
+    background-color: #C1B7B6;
+    float: right;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
+  /*CSS Code for Quote */
+#iForm{
+    width: 30%;
+    position: relative;
+    margin: auto;
+}
+label.iForm {
+    margin: 3px;
+    float: left;
+}
+form.iForm {
+    height: 470px;
+    margin: 0;
+    padding: 0px 5px 0px;
+    width: 450px;
+    font-size: 14pt;
+}
+input[type=text].iForm{
+    border: none;
+    padding: 3px 3px;
+    margin: 2px 3px;
+    border-radius: 2px;
+    background-color: #C1B7B6;
+}
+input[type=submit].iForm{
+    border: none;
+    padding: 3px 3px;
+    border-radius: 2px;
+    background-color: #C1B7B6;
+    float: left;
+}
+input[type=submit].iForm:hover{
+    color:#C1B7B6;
+    background-color: #331832;
+}
+select.iForm {
+    color: #331832;
+    border: none;
+    padding: 2px 2px;
+    border-radius: 2px;
+    background-color:#C1B7B6;
+    float: right;
+    margin-top: 2px;
+
+}
+    /*CSS Code for catalog preview */
+.thumbnails img{
+    height: 80px;
+    border: 2px solid #C1B7B6;
+    padding: 1px;
+    margin: 0 10px 10px 0;
+}
+.thumbnails img:hover{
+    border: 2px solid #331832;
+    cursor:pointer;
+}
+} 
+ 
+@media all and (min-width: 480px) and (max-width: 768px) {
+    body {
+    background-color: #E8D3C2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16pt;
+    color: #ffffff;
+    margin: 0px;
+}
+
+h2.logotxt{
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    color: #331832;
+}
+
+header {
+    background-color: #EEE9ED;
+    color: #5386E4;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+#container {
+    width:100%;
+}
+
+main {
+    width: 100%;
+    background-color: #331832;
+    float: left;
+    margin:0px;
+    padding: 5px 0px 5px 0px;
+}
+
+footer {
+    clear: both;
+    background-color: #331832;
+    color: #ffffff;
+    text-align: center;
+    margin:0px;
+    font-size: 12pt;
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+    
+    
+}
+footer a{
+    text-decoration:none;
+}
+
+nav {
+  border-top: 1px solid #331832;
+  margin: 0px;
+  background-color: #C1B7B6;
+  border-bottom: 1px solid #E8D3C2;
+  width:100%;
+  padding: 0px;
+}
+nav a {
+    flex-shrink: 1;
+    color:#331832;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    margin: 0px;
+    padding: 5px 10px 5px;
+    background-color: #C1B7B6;
+
+}
+nav a:hover {
+    color: #331832;
+    margin: 0;
+    padding: 5px 10px 5px;
+    text-decoration: none;
+    background-color: white;
+    
+}
+nav a:visited {
+    color: #331832;
+}
+a {
+    color: #C1B7B6;
+}
+
+a:visited{
+    
+    color: #E8D3C2;
+}
+
+a:hover{
+    color:#5386E4;
+    
+}
+/*CSS Code for homepage */
+
+.imghome {
+   float: left;
+   margin: 0 10px 0 5px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.maintext {
+    font-size: 24pt;
+    margin-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*CSS Code for About Us*/
+#location {
+    float: left ;
+    margin: 0 10px 0 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#listport {
+    float: left;
+}
+#slider {
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+}
+
+#slider .slides {
+    display: block;
+    width: 6000px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 500px;
+    height: 400px;
+}
+#slider img {
+    width: 100%;
+    height: 100%;
+}
+.carousel-link
+{
+    width: 500px;
+}
+.previousLink, .nextLink
+{
+    display:inline-block;
+}
+
+.previousLink
+{
+    float:left;
+}
+
+.nextLink
+{
+    float: right;
+}
+
+/*CSS Code for Portfolio */
+.blogtext {
+    margin-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/*CSS Code for Form*/
+hr {
+    border: 3px dotted #C1B7B6;
+    border-top: 0px;
+}
+#mForm {
+    width: 30%;
+    position: relative;
+    margin: auto;
+}
+form {
+    height: 370px;
+    margin: 0;
+    padding: 0px 5px 0px;
+    width: 350px;
+    font-size: 14pt;
+}
+input[type=text]{
+    border: none;
+    padding: 5px 5px;
+    margin: 5px 5px;
+    border-radius: 2px;
+    background-color: #C1B7B6;
+    float: right;
+}
+input[type=submit]{
+    border: none;
+    padding: 5px 5px;
+    border-radius: 2px;
+    background-color: #C1B7B6;
+    float: left;
+}
+input[type=submit]:hover{
+    color:#C1B7B6;
+    background-color: #331832;
+}
+select {
+    color:#331832;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 2px;
+    background-color: #C1B7B6;
+    float: right;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
+  /*CSS Code for Quote */
+hr {
+    border: 3px dotted #C1B7B6;
+    border-top: 0px;
+}
+#iForm{
+    width: 30%;
+    position: relative;
+    margin: auto;
+}
+label.iForm {
+    margin: 3px;
+    float: left;
+}
+form.iForm {
+    height: 470px;
+    margin: 0;
+    padding: 0px 5px 0px;
+    width: 450px;
+    font-size: 14pt;
+}
+input[type=text].iForm{
+    border: none;
+    padding: 3px 3px;
+    margin: 2px 3px;
+    border-radius: 2px;
+    background-color: #C1B7B6;
+}
+input[type=submit].iForm{
+    border: none;
+    padding: 3px 3px;
+    border-radius: 2px;
+    background-color: #C1B7B6;
+    float: left;
+}
+input[type=submit].iForm:hover{
+    color:#C1B7B6;
+    background-color: #331832;
+}
+select.iForm {
+    color: #331832;
+    border: none;
+    padding: 2px 2px;
+    border-radius: 2px;
+    background-color:#C1B7B6;
+    float: right;
+    margin-top: 2px;
+
+}
+
+/*CSS Code for catalog preview */
+.thumbnails img{
+    height: 80px;
+    border: 2px solid #C1B7B6;
+    padding: 1px;
+    margin: 0 10px 10px 0;
+}
+.thumbnails img:hover{
+    border: 2px solid #331832;
+    cursor:pointer;
+}
+
+}
+
+
+ 
+@media all and (max-width: 480px) { 
+body {
+    background-color: #E8D3C2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16pt;
+    color: #ffffff;
+    margin: 0px;
+}
+
+h2.logotxt{
+    display: flex;
+    flex-shrink: 1;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    color: #331832;
+}
+
+header {
+    background-color: #EEE9ED;
+    color: #5386E4;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+#container {
+    width:100%;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    background-color: #331832;
+    float: left;
+    margin:0px;
+    padding: 5px 0px 5px 0px;
+}
+
+footer {
+    clear: both;
+    background-color: #331832;
+    color: #ffffff;
+    text-align: center;
+    margin:0px;
+    font-size: 12pt;
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+    
+    
+}
+footer a{
+    text-decoration:none;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border-top: 1px solid #331832;
+  margin: 0px;
+  background-color: #C1B7B6;
+  border-bottom: 1px solid #E8D3C2;
+  width:100%;
+  padding: 0px;
+}
+nav a {
+    flex-shrink: 1;
+    color:#331832;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    margin: 0px;
+    padding: 5px 10px 5px;
+    background-color: #C1B7B6;
+
+}
+nav a:hover {
+    color: #331832;
+    margin: 0;
+    padding: 5px 10px 5px;
+    text-decoration: none;
+    background-color: white;
+    
+}
+nav a:visited {
+    color: #331832;
+}
+a {
+    color: #C1B7B6;
+}
+
+a:visited{
+    
+    color: #E8D3C2;
+}
+
+a:hover{
+    color:#5386E4;
+    
+}
+/*CSS Code for homepage */
+
+.imghome {
+   float: none;
+   margin: 0 10px 0 5px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.mainSec {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10px 0 5px;
+}
+.mainSec img{
+    flex-shrink: 1;
+}
+
+p {
+    text-align: left;
+}
+
+.maintext {
+    font-size: 24pt;
+    margin-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*CSS Code for About Us */
+#pContainer {
+    display: flex;
+
+}
+.section {
+        flex-direction: column;
+}
+#location {
+    float: none;
+    margin: 0 10px 0 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#listport {
+    float: left;
+}
+#slider {
+    display: flex;
+    width: 370px;
+    height: 400px;
+    overflow: hidden;
+}
+
+#slider .slides {
+    flex-shrink: 1;
+    width: 6000px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide {
+    flex-shrink: 1;
+    float: left;
+    list-style-type: none;
+    width: 370px;
+    height: 400px;
+}
+#slider img {
+    
+    flex-shrink: 1;
+    width: 100%;
+    height: 100%;
+}
+.carousel-link
+{
+    width: 370px;
+}
+.previousLink, .nextLink
+{
+    display:inline-block;
+}
+
+.previousLink
+{
+    float:left;
+}
+
+.nextLink
+{
+    float: right;
+}
+
+/*CSS Code for Portfolio */
+.blogtext {
+    margin-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/*CSS Code for Form*/
+hr {
+    border: 3px dotted #C1B7B6;
+    border-top: 0px;
+}
+#mForm {
+
+    position: relative;
+    margin: auto;
+}
+form.iForm {
+    height: 350px;
+    margin: 0;
+    padding: 0px 5px 0px;
+    width: 330px;
+    font-size: 14pt;
+}
+input[type=text]{
+    border: none;
+    padding: 5px 5px;
+    margin: 5px 5px;
+    border-radius: 2px;
+    background-color: #C1B7B6;
+    float: right;
+}
+input[type=submit]{
+    border: none;
+    padding: 5px 5px;
+    border-radius: 2px;
+    background-color: #C1B7B6;
+    float: left;
+}
+input[type=submit]:hover{
+    color:#C1B7B6;
+    background-color: #331832;
+}
+select {
+    color:#331832;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 2px;
+    background-color: #C1B7B6;
+    float: right;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
+  /*CSS Code for Quote */
+hr {
+    border: 3px dotted #C1B7B6;
+    border-top: 0px;
+}
+#iForm{
+    width: 30%;
+    position: relative;
+    margin: auto;
+}
+label.iForm {
+    margin: 3px;
+    float: left;
+}
+form.iForm {
+    height: 470px;
+    margin: 0;
+    padding: 0px 5px 0px;
+    width: 450px;
+    font-size: 14pt;
+}
+input[type=text].iForm{
+    border: none;
+    padding: 3px 3px;
+    margin: 2px 3px;
+    border-radius: 2px;
+    background-color: #C1B7B6;
+}
+input[type=submit].iForm{
+    border: none;
+    padding: 3px 3px;
+    border-radius: 2px;
+    background-color: #C1B7B6;
+    float: left;
+}
+input[type=submit].iForm:hover{
+    color:#C1B7B6;
+    background-color: #331832;
+}
+select.iForm {
+    color: #331832;
+    border: none;
+    padding: 2px 2px;
+    border-radius: 2px;
+    background-color:#C1B7B6;
+    float: right;
+    margin-top: 2px;
+
+}
+    /*CSS Code for catalog preview */
+.thumbnails{
+    display: flex;
+    flex-direction: column;
+}
+.thumbnails img{
+    width: 98%;
+    height: 300px;
+    border: 2px solid #C1B7B6;
+    padding: 1px;
+    margin: 0px 10px 10px 0px;
+}
+.thumbnails img:hover{
+    border: 2px solid #331832;
+    cursor:pointer;
+}
+}

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Catalog | ABCover Designers - When Elegance is of the essence</title>
+        <link rel="stylesheet" type="text/css" href="styles/main.css"> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+     $( document ).ready(function(e)
+     {
+        var myImage= new Array(); 
+        var i;
+        for (i =1; i < 310; i++){
+            myImage[i] = "images/port/portfolio-"+i+".jpg";
+            $(".thumbnails").append("<a href="+myImage[i]+"><img src="+myImage[i]+" height='100' width='100' alt='Ab Cover Image'></a>");
+        }
+     });
+        
+    </script>
+    </head>
+    <body>
+        <header>
+            <div id="logo"><img src="images/logo.png" alt="AB Cover Designers Logo" width="200" height="100"></div> 
+            <h2 class="logotxt">Catalog | Inventory of Elegance</h2>
+        </header>
